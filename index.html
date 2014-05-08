@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/pace.min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script type="text/javascript" src="js/extraDataParser.js"></script>
+<script type="text/javascript" src="js/barGraphGenerator.js"></script>
+<link rel="stylesheet" type="text/css" href="css/mainStyle.css"/>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/dataurl.css"/>
+<link rel="stylesheet" type="text/css" href="css/tipsy.css"/>
+  
+<body>
+  <div id="content">
+    <script type="text/javascript" src="js/generateMapScript.js"></script>
+    <div id="infoSection">
+      <h1>I to We:</h1><h2>Transition from Self to Others</h2>
+      <div id="infoBox">
+        
+        <canvas id="chartContainer" width="200px" height="100px"></canvas>
+        
+        <div class="legend">
+          <p><span class="legendNum1"></span><span class="legendNum2"></span><span class="legendNum3"></span></p>
+          <p style="margin-top:15px"></p>
+          <p><div id="legendColor1"></div><span id="legend1"></span></p>
+          <p><div id="legendColor2"></div><span id="legend2"></span></p>
+          <p><div id="legendColor3"></div><span id="legend3"></span></p>
+          <p><div id="legendColor4"></div><span id="legend4"></span></p>
+
+        </div>
+      </div>
+      <a class="moreInfo" href="#">About</a>
+    </div>
+    <div id="sliderAll">
+      <div id="slider"></div>
+      <table id="sliderInfo">
+        <tr>
+        <td>I</td>
+        <td>We</td>
+      </tr>
+      </table>
+    </div>
+    <footer>Made for <a href="http://datadesign.wordpress.com" target="_blank">Information Design</a> in conjuction with the <a href="http://www.wwbp.org/" target="_blank">World Well-Being Project</a> at the University of Pennsylvania by <a href="http://tarasiegel.com" target="_blank">Tara Siegel</a> © 2014</footer>
+    <div class="overlay">
+      <div class="overlayContent">
+        <h1>About this project</h1>
+        <p>This infographic hopes to explore the transition between the use of 'I' to 'We' in speech and discover where each states lies on that spectrum. Seen in the diagram below, there is a significant shift from the use of the word 'I' in facebook and social media statuses to the word 'We' through age. </p>
+        <img id="overlayPicture" src="infochart.png" width="400px" align="left"/>
+        <p>Expanding on this apparent shift from the use of ‘I’ to ‘We’ as age progresses, this infographic looks at a more variety of words related to these and the transition between them by state. The data for this project is collected by The World Well-Being Project, which is a multi-disciplinary research group in the Positive Psychology Center at the University of Pennsylvania.  2000 topics were derived via Latent Dirichlet allocation for over ~14 million Facebook status updates.  I was given the frequency of each of these topics based off individual counties in the United States.  By preprocessing the data I condensed the frequencies to reflect individual states, based off population.</p>
+        <p>The slider on the bottom of the map steps through this transition.  Each step represents a group of words that relate to a particular phase in life and what people at that age would be concerned about.  More earlier on in life, teenagers and young adults are talk more about their own accomplishments and worries, generally concerning school or work life.  As people grow up, develop relationships, get married and start a family, we see that shift from inwardly concerns to others.</p>  
+        <p>After compiling these groups of words, they were cross referenced with these 2000 topic and created a weight for each topic depending on how many from my list at each step appeared in it. The seen topics were then combined using a weighted average and that is what is seen on the map, with states that are darker having a higher frequency of that group of words.  Supplementary data that adds to the data seen at that age point can be seen per state by hovering over a state. </p>
+        <p>This infographic that has been created for FNAR337, Information Visualization a Fine Arts course at the University of Pennsylvania.  Word and topic data by county was provided by the <a href="http://www.wwbp.org/data.html" target="_blank">World Well-Being Project</a>.  Other statistics were collected from the <a href="http://factfinder2.census.gov/" target="_blank">United States Census Bureau.</a> </p>
+        <button class="overlayClose">Close</button>
+      </div>
+    </div>
+    
+</div>
+
+  
+</body>
+
+</html>

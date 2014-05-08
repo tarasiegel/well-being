@@ -1,0 +1,283 @@
+
+@import url(http://fonts.googleapis.com/css?family=Glegoo|Ribeye+Marrow);
+
+body {
+  display: inherit;
+  font-size: 12px;
+  height: 100%;
+  font-family: 'Glegoo', serif;
+}
+
+h4{
+  text-align: center;
+  color:#fff;
+}
+
+h1 {
+  text-align: center;
+  line-height: .9;
+  font-size: 2em;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.7em;
+  margin: 0 auto;
+  width: 59%;
+  color: slategray;
+  font-weight: normal;
+  font-family: helvetica;
+}
+
+footer { 
+  position: absolute;
+  color: #a1a1a1;
+  margin-top: 35px;
+  width: 1000px;
+  font-size: 9px;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+  font-style: normal;
+}
+
+#content {
+  width: 975px;
+  margin: 30px auto 0 auto;
+  border: 4px solid #e1e1e1;
+  padding: 10px 0px 20px 25px;
+}
+
+.background {
+  padding: 0 4%;
+  fill: none;
+  pointer-events: all;
+  margin-left: 3%;
+}
+
+g {
+  border-color: #000;
+  border-width: 4px;
+}
+
+.states {
+  fill: #aaa;
+}
+
+.stateBorders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.7px;
+  stroke-linejoin: round;
+}
+
+#infoSection {
+  position: fixed;
+  margin-top: -300px;
+  margin-left: 700px;
+  width: 278px;
+}
+
+#infoBoxTitle {
+  font-size: 17px;
+  margin: 10px 0 0 0;
+  color: slategray;
+}
+
+#infoBox {
+  height: 200px;
+  padding: 0px 5px;
+  width: 81%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37px;
+}
+
+a.moreInfo {
+  font-size: 11px;
+  line-height: 17.6;
+  margin-left: 77%;
+  color: slategrey;
+  padding: 5px 10px;
+}
+
+button.moreInfo {
+  font-size: 11px;
+  margin-left: 83%;
+  color: slategrey;
+  padding: 10px;
+  margin-top: 79px;
+  border: none;
+  background: none;
+}
+
+a.moreInfo:hover{
+  color: black;
+}
+
+
+
+.legend p{
+  margin-left: 5px;
+  margin: 0;
+}
+
+#schoolInfo.legendNum1 {
+  padding-left: 29%;
+}
+
+#schoolInfo.legendNum2 {
+  padding: 0 7%;
+}
+
+#marriageInfo.legendNum1 {
+  padding-left: 17%;
+}
+
+#marriageInfo.legendNum2 {
+  padding: 0 3%;
+}
+
+#marriageInfo.legendNum3 {
+  padding: 0 2%;
+}
+
+#jobInfo.legendNum1 {
+  padding-left: 18%;
+} 
+
+#jobInfo.legendNum2 {
+  padding: 0 8%;
+}
+
+#jobInfo.legendNum3 {
+  padding-left: 2%;
+}
+
+#legend1, #legend2, #legend3, #legend4 {
+  font-size: 11px;
+  padding-left: 4px;
+  font-weight: 400;
+}
+
+#legendColor1, #legendColor2, #legendColor3, #legendColor4 {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 15px;
+}
+
+#slider {
+  height: 3px;
+  background: -webkit-gradient(linear, right top, right bottom, from(#303030), to(#fff));
+  background-image: linear-gradient(#303030, #fff);
+  background: -moz-linear-gradient(right, #303030, #fff);
+  background: -webkit-linear-gradient(right, #303030,#ffffff);
+  opacity: 0.6;
+}
+
+#sliderAll {
+  width: 35%;
+  margin-top: 25px;
+  margin-left: 25%;
+}
+
+#sliderInfo {
+  margin-top: 10px;
+}
+
+#sliderInfo > tbody > tr > td {
+  width: 300%;
+  font-size: medium;
+  font-family: helvetica;
+  font-weight: normal;
+}
+
+.q0-9 { fill:rgb(247,251,255); }
+.q1-9 { fill:rgb(222,235,247); }
+.q2-9 { fill:rgb(198,219,239); }
+.q3-9 { fill:rgb(158,202,225); }
+.q4-9 { fill:rgb(107,174,214); }
+.q5-9 { fill:rgb(66,146,198); }
+.q6-9 { fill:rgb(33,113,181); }
+.q7-9 { fill:rgb(8,81,156); }
+.q8-9 { fill:rgb(8,48,107); }
+
+.d3-tip {
+  line-height: 1;
+  padding: 4px 8px 4px 8px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 8px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  background: #000;
+  background: rgba(0,0,0,0.55);
+}
+
+.overlayContent {
+  background: #FFF;
+  padding: 1%;
+  width: 50%;
+  position: relative;
+  top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+
+.overlayClose{
+  cursor: pointer;
+  padding: 1% 2%;
+  border: none;
+  margin-left: 90%;
+}
+
+.overlayPicture {
+  margin-right: 14px;
+}
+
+#line {
+  height: 2px;
+  background: #cecece;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
